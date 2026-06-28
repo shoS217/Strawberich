@@ -26,7 +26,7 @@ About
     text-align: center;
     text-shadow: 0 2px 5px #000;
     color: #fff;
-    background-image: url(../images/viewing1.jpg);
+    background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url(../images/viewing1.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
