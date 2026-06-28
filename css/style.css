@@ -1,14 +1,23 @@
 /*
 Header
 */
-.logo
-{    
+.header-wrapper
+{
+    display: flex;
+    justify-content: space-between;
     position: fixed;
-    top: 0;
-    left: 0;
+    width: 100vw;
+}
+.logo
+{
     width: 75px;
     height: 75px;
     background-color: #fff;
+}
+.navmenu-open-btn
+{
+    width: 75px;
+    height: 75px;
 }
 
 /*
