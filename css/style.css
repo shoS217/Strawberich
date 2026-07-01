@@ -100,3 +100,67 @@ Menu
     border-radius: 20px;
     padding: 0.5rem 1rem;
 }
+
+/*
+Information
+*/
+#information-wrapper
+{
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Noto Serif JP", serif;
+    font-style: normal;
+    text-align: center;
+    text-shadow: 0 2px 5px #000;
+    color: #fff;
+    background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url(../images/viewing2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+#information-wrapper h1
+{
+    display: inline-block;
+    font-size: 1.5rem;
+    border-bottom: 1.5px solid #fff;
+    padding: .25rem 1.5rem;
+}
+#information-table
+{
+    width: 75vw;
+    border-spacing: 0
+}
+#information-table th,
+#information-table td
+{
+    text-align: left;
+    border-bottom: 1px solid #fff;
+}
+#information-table th
+{
+    padding: 1rem;
+}
+#sns
+{
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    width: 75vw;
+}
+#insta-btn,
+#tiktok-btn
+{
+    font-size: 24px;
+    color: #fff;
+}
+#table-reservation-btn
+{
+    background-color: #CBBBAF;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+}
