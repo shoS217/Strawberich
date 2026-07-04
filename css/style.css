@@ -12,7 +12,9 @@ Header
 {
     width: 75px;
     height: 75px;
-    background-color: #fff;
+    background-color: #E8E5E2;
+    border-radius: 50%;
+    margin: .5rem;
 }
 .navmenu-open-btn
 {
