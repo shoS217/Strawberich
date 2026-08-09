@@ -197,6 +197,67 @@ Footer
 }
 
 /*
+Tablet
+*/
+@media (min-width: 768px)
+{
+    /*
+    Common
+    */
+    .right-branch,
+    .left-branch
+    {
+        width: 30vw;
+    }
+    .right-branch
+    {
+        right: -7vw;
+    }
+
+    /*
+    About
+    */
+    #about-logo-background
+    {
+        width: 50vw;
+    }
+    #logo-white
+    {
+        width: 22vw;
+    }
+    #about-wrapper h1
+    {
+        font-size: 30px;
+    }
+
+    /*
+    Menu
+    */
+    #menu-wrapper h1
+    {
+        font-size: 30px;
+        padding: .35rem 2.25rem;
+    }
+    #products-img
+    {
+        width: 50vw;
+    }
+
+    /*
+    Information
+    */
+    #information-wrapper h1
+    {
+        font-size: 30px;
+        padding: .35rem 2.25rem;
+    }
+    #information-table
+    {
+        width: 40vw;
+    }
+}
+
+/*
 PC
 */
 @media (min-width: 1025px)
