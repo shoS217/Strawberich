@@ -243,4 +243,17 @@ PC
     {
         width: 30vw;
     }
+
+    /*
+    Information
+    */
+    #information-wrapper h1
+    {
+        font-size: 30px;
+        padding: .35rem 2.25rem;
+    }
+    #information-table
+    {
+        width: 30vw;
+    }
 }
