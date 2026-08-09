@@ -194,3 +194,38 @@ Footer
     color: #2F2B28;
     padding: 1.25rem 0;
 }
+
+/*
+PC
+*/
+@media (min-width: 1025px)
+{
+    /*
+    Common
+    */
+    .right-branch,
+    .left-branch
+    {
+        width: 15vw;
+    }
+    .right-branch
+    {
+        right: -3.5vw;
+    }
+
+    /*
+    About
+    */
+    #about-logo-background
+    {
+        width: 25vw;
+    }
+    #logo-white
+    {
+        width: 11vw;
+    }
+    #about-wrapper h1
+    {
+        font-size: 30px;
+    }
+}
