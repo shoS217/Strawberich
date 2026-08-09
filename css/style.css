@@ -1,3 +1,30 @@
+body
+{
+    font-family: "Noto Serif JP", serif;
+    font-style: normal;
+    text-align: center;
+    color: #5D554D;
+    z-index: 1;
+}
+.right-branch,
+.left-branch
+{
+    position: absolute;
+    opacity: .5;
+    width: 40vw;
+}
+.right-branch
+{
+    right: -10vw;
+    bottom: 10vh;
+    transform: scale(-1, 1);
+}
+.left-branch
+{
+    left: 0;
+    bottom: 0;
+}
+
 /*
 Header
 */
@@ -6,6 +33,7 @@ Header
     display: flex;
     justify-content: space-between;
     position: fixed;
+    z-index: 100;
     width: 100vw;
 }
 .logo
@@ -32,31 +60,35 @@ About
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: "Noto Serif JP", serif;
-    font-style: normal;
-    text-align: center;
-    text-shadow: 0 2px 5px #000;
-    color: #fff;
-    background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url(../images/viewing1.jpg);
-    background-size: cover;
-    background-position: center;
+    background-color: #e7e5e2;
+    position: relative;
+    overflow: hidden;
     height: 100vh;
+}
+#about-logo
+{
+    position: relative;
+}
+#about-logo-background
+{
+    width: 90vw;
 }
 #logo-white
 {
-    width: 50vw;
-    aspect-ratio: 1 / 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vw;
 }
 #about-wrapper h1
 {
-    font-size: 1.25rem;
+    font-size: 20px;
 }
 #about-wrapper p
 {
-    width: 75vw;
-    letter-spacing: 0.2rem;
-    line-height: 1.5rem;
-    margin: 0 auto;
+    font-size: 14px;
+    margin: 0 1rem;
 }
 
 /*
@@ -64,35 +96,25 @@ Menu
 */
 #menu-wrapper
 {
-    background: #E2D3CC;
-    font-family: "Noto Serif JP", serif;
-    font-style: normal;
-    text-align: center;
-    text-shadow: 0 2px 5px #000;
-    color: #fff;
+    background: #f5f2ed;
     padding: 2rem 0;
 }
 #menu-wrapper h1
 {
     display: inline-block;
-    font-size: 1.5rem;
-    border-bottom: 1.5px solid #fff;
+    font-size: 20px;
+    border-bottom: 1.5px solid #5D554D;
     padding: .25rem 1.5rem;
-    margin: 0 auto 2rem;
+    margin: 0 1rem 2rem;
 }
 #menu-wrapper p
 {
-    width: 75vw;
-    letter-spacing: 0.2rem;
-    line-height: 1.5rem;
-    margin: 0 auto 2rem;
+    font-size: 14px;
+    margin: 0 1rem 2rem;
 }
 #products-img
 {
-    display: block;
     width: 75vw;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
     margin: 0 auto 2rem;
 }
 #menu-btn
@@ -113,21 +135,16 @@ Information
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: "Noto Serif JP", serif;
-    font-style: normal;
-    text-align: center;
-    text-shadow: 0 2px 5px #000;
-    color: #fff;
-    background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url(../images/viewing2.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    background-color: #f5f2ed;
+    position: relative;
+    overflow: hidden;
+    padding: 2rem 0;
 }
 #information-wrapper h1
 {
     display: inline-block;
-    font-size: 1.5rem;
-    border-bottom: 1.5px solid #fff;
+    font-size: 20px;
+    border-bottom: 1.5px solid #5D554D;
     padding: .25rem 1.5rem;
 }
 #information-table
@@ -139,7 +156,8 @@ Information
 #information-table td
 {
     text-align: left;
-    border-bottom: 1px solid #fff;
+    font-size: 14px;
+    border-bottom: 1px solid #5D554D;
 }
 #information-table th
 {
@@ -155,14 +173,14 @@ Information
 #insta-btn,
 #tiktok-btn
 {
+    color: inherit;
     font-size: 24px;
-    color: #fff;
 }
 #table-reservation-btn
 {
     background-color: #CBBBAF;
     text-decoration: none;
-    color: inherit;
+    color: #fff;
     border-radius: 20px;
     padding: 0.5rem 2rem;
 }
@@ -173,8 +191,6 @@ Footer
 .copyright
 {
     background-color: #E8E5E2;
-    font-family: "Noto Serif JP", serif;
-    text-align: center;
     color: #2F2B28;
     padding: 1.25rem 0;
 }
