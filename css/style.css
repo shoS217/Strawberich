@@ -1,0 +1,196 @@
+body
+{
+    font-family: "Noto Serif JP", serif;
+    font-style: normal;
+    text-align: center;
+    color: #5D554D;
+    z-index: 1;
+}
+.right-branch,
+.left-branch
+{
+    position: absolute;
+    opacity: .5;
+    width: 40vw;
+}
+.right-branch
+{
+    right: -10vw;
+    bottom: 10vh;
+    transform: scale(-1, 1);
+}
+.left-branch
+{
+    left: 0;
+    bottom: 0;
+}
+
+/*
+Header
+*/
+.header-wrapper
+{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+}
+.logo
+{
+    width: 75px;
+    height: 75px;
+    background-color: #E8E5E2;
+    border-radius: 50%;
+    margin: .5rem;
+}
+.navmenu-open-btn
+{
+    width: 75px;
+    height: 75px;
+}
+
+/*
+About
+*/
+#about-wrapper
+{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7e5e2;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+#about-logo
+{
+    position: relative;
+}
+#about-logo-background
+{
+    width: 90vw;
+}
+#logo-white
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+}
+#about-wrapper h1
+{
+    font-size: 20px;
+}
+#about-wrapper p
+{
+    font-size: 14px;
+    margin: 0 1rem;
+}
+
+/*
+Menu
+*/
+#menu-wrapper
+{
+    background: #f5f2ed;
+    padding: 2rem 0;
+}
+#menu-wrapper h1
+{
+    display: inline-block;
+    font-size: 20px;
+    border-bottom: 1.5px solid #5D554D;
+    padding: .25rem 1.5rem;
+    margin: 0 1rem 2rem;
+}
+#menu-wrapper p
+{
+    font-size: 14px;
+    margin: 0 1rem 2rem;
+}
+#products-img
+{
+    width: 75vw;
+    margin: 0 auto 2rem;
+}
+#menu-btn
+{
+    background: #CBBBAF;
+    color: #fff;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+}
+
+/*
+Information
+*/
+#information-wrapper
+{
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f2ed;
+    position: relative;
+    overflow: hidden;
+    padding: 2rem 0;
+}
+#information-wrapper h1
+{
+    display: inline-block;
+    font-size: 20px;
+    border-bottom: 1.5px solid #5D554D;
+    padding: .25rem 1.5rem;
+}
+#information-table
+{
+    width: 75vw;
+    border-spacing: 0
+}
+#information-table th,
+#information-table td
+{
+    text-align: left;
+    font-size: 14px;
+    border-bottom: 1px solid #5D554D;
+}
+#information-table th
+{
+    padding: 1rem;
+}
+#sns
+{
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    width: 75vw;
+}
+#insta-btn,
+#tiktok-btn
+{
+    color: inherit;
+    font-size: 24px;
+}
+#table-reservation-btn
+{
+    background-color: #CBBBAF;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+}
+
+/*
+Footer
+*/
+.copyright
+{
+    background-color: #E8E5E2;
+    color: #2F2B28;
+    padding: 1.25rem 0;
+}
