@@ -6,6 +6,10 @@ body
     color: #5D554D;
     z-index: 1;
 }
+br
+{
+    display: none;
+}
 .right-branch,
 .left-branch
 {
@@ -38,8 +42,7 @@ Header
 }
 .logo
 {
-    width: 75px;
-    height: 75px;
+    width: 15vw;
     background-color: #E8E5E2;
     border-radius: 50%;
     margin: .5rem;
@@ -56,7 +59,7 @@ About
 #about-wrapper
 {
     display: flex;
-    gap: 1rem;
+    gap: .5rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -114,6 +117,7 @@ Menu
 #menu-wrapper p
 {
     font-size: 14px;
+    margin: 0 1rem;
 }
 #products-img
 {
@@ -151,7 +155,7 @@ Information
 }
 #information-table
 {
-    width: 75vw;
+    width: 320px;
     border-spacing: 0
 }
 #information-table th,
@@ -202,8 +206,20 @@ Tablet
 @media (min-width: 768px)
 {
     /*
+    Header
+    */
+    .logo
+    {
+        width: 10vw;
+    }
+
+    /*
     Common
     */
+    br
+    {
+        display: inline;
+    }
     .right-branch,
     .left-branch
     {
@@ -227,7 +243,7 @@ Tablet
     }
     #about-wrapper h1
     {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     /*
@@ -253,18 +269,30 @@ Tablet
     }
     #information-table
     {
-        width: 40vw;
+        width: 416px;
     }
 }
 
 /*
 PC
 */
-@media (min-width: 1025px)
+@media (min-width: 1025px), (orientation: landscape)
 {
+    /*
+    Header
+    */
+    .logo
+    {
+        width: 5vw;
+    }
+
     /*
     Common
     */
+    br
+    {
+        display: inline;
+    }
     .right-branch,
     .left-branch
     {
@@ -286,9 +314,9 @@ PC
     {
         width: 11vw;
     }
-    #about-wrapper h1
+    #about-wrapper p
     {
-        font-size: 30px;
+        margin: 0;
     }
 
     /*
@@ -314,6 +342,6 @@ PC
     }
     #information-table
     {
-        width: 30vw;
+        width: 416px;
     }
 }
