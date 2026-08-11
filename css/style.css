@@ -6,6 +6,10 @@ body
     color: #5D554D;
     z-index: 1;
 }
+br
+{
+    display: none;
+}
 .right-branch,
 .left-branch
 {
@@ -38,8 +42,7 @@ Header
 }
 .logo
 {
-    width: 75px;
-    height: 75px;
+    width: 15vw;
     background-color: #E8E5E2;
     border-radius: 50%;
     margin: .5rem;
@@ -56,7 +59,7 @@ About
 #about-wrapper
 {
     display: flex;
-    gap: 1rem;
+    gap: .5rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -96,6 +99,11 @@ Menu
 */
 #menu-wrapper
 {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: #f5f2ed;
     padding: 2rem 0;
 }
@@ -105,17 +113,15 @@ Menu
     font-size: 20px;
     border-bottom: 1.5px solid #5D554D;
     padding: .25rem 1.5rem;
-    margin: 0 1rem 2rem;
 }
 #menu-wrapper p
 {
     font-size: 14px;
-    margin: 0 1rem 2rem;
+    margin: 0 1rem;
 }
 #products-img
 {
     width: 75vw;
-    margin: 0 auto 2rem;
 }
 #menu-btn
 {
@@ -149,7 +155,7 @@ Information
 }
 #information-table
 {
-    width: 75vw;
+    width: 320px;
     border-spacing: 0
 }
 #information-table th,
@@ -168,7 +174,6 @@ Information
     display: flex;
     gap: .5rem;
     justify-content: center;
-    width: 75vw;
 }
 #insta-btn,
 #tiktok-btn
@@ -193,4 +198,150 @@ Footer
     background-color: #E8E5E2;
     color: #2F2B28;
     padding: 1.25rem 0;
+}
+
+/*
+Tablet
+*/
+@media (min-width: 768px)
+{
+    /*
+    Header
+    */
+    .logo
+    {
+        width: 10vw;
+    }
+
+    /*
+    Common
+    */
+    br
+    {
+        display: inline;
+    }
+    .right-branch,
+    .left-branch
+    {
+        width: 30vw;
+    }
+    .right-branch
+    {
+        right: -7vw;
+    }
+
+    /*
+    About
+    */
+    #about-logo-background
+    {
+        width: 50vw;
+    }
+    #logo-white
+    {
+        width: 22vw;
+    }
+    #about-wrapper h1
+    {
+        font-size: 20px;
+    }
+
+    /*
+    Menu
+    */
+    #menu-wrapper h1
+    {
+        font-size: 30px;
+        padding: .35rem 2.25rem;
+    }
+    #products-img
+    {
+        width: 50vw;
+    }
+
+    /*
+    Information
+    */
+    #information-wrapper h1
+    {
+        font-size: 30px;
+        padding: .35rem 2.25rem;
+    }
+    #information-table
+    {
+        width: 416px;
+    }
+}
+
+/*
+PC
+*/
+@media (min-width: 1025px), (orientation: landscape)
+{
+    /*
+    Header
+    */
+    .logo
+    {
+        width: 5vw;
+    }
+
+    /*
+    Common
+    */
+    br
+    {
+        display: inline;
+    }
+    .right-branch,
+    .left-branch
+    {
+        width: 15vw;
+    }
+    .right-branch
+    {
+        right: -3.5vw;
+    }
+
+    /*
+    About
+    */
+    #about-logo-background
+    {
+        width: 25vw;
+    }
+    #logo-white
+    {
+        width: 11vw;
+    }
+    #about-wrapper p
+    {
+        margin: 0;
+    }
+
+    /*
+    Menu
+    */
+    #menu-wrapper h1
+    {
+        font-size: 30px;
+        padding: .35rem 2.25rem;
+    }
+    #products-img
+    {
+        width: 30vw;
+    }
+
+    /*
+    Information
+    */
+    #information-wrapper h1
+    {
+        font-size: 30px;
+        padding: .35rem 2.25rem;
+    }
+    #information-table
+    {
+        width: 416px;
+    }
 }
