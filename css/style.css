@@ -49,8 +49,9 @@ Header
 }
 .navmenu-open-btn
 {
-    width: 75px;
-    height: 75px;
+    width: 7.5vw;
+    fill: #5D554D;
+    margin: 1rem;
 }
 
 /*
