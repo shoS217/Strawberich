@@ -104,6 +104,7 @@ Header
     width: 75vw;
     height: 100vh;
     z-index: 2;
+    translate: 100vw;
 }
 .navmenu-close-btn
 {
