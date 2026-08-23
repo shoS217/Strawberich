@@ -57,3 +57,36 @@ accessTransitionBtn.addEventListener('click', ()=>
         behavior: "smooth",
     });
 });
+
+/*
+About
+*/
+const shopViewImages = document.querySelectorAll(".shop-view-img");
+const endOpacity = 0.6;
+const fadeInKeyFrame = 
+{
+    opacity: [0, endOpacity],
+};
+const fadeOutKeyFrame = 
+{
+    opacity: [endOpacity, 0],
+};
+const fadeOptions = 
+{
+    duration: 1000,
+    easing: 'ease',
+    fill: 'forwards',
+}
+let currentIndex = 0;
+
+shopViewImages.forEach((shopViewImage, index) => 
+{
+    shopViewImage.style.opacity = index === 0 ? endOpacity : 0;
+});
+
+setInterval(() => 
+{
+    shopViewImages[currentIndex].animate(fadeOutKeyFrame, fadeOptions);
+    currentIndex = currentIndex >= shopViewImages.length - 1 ? 0 : ++currentIndex;
+    shopViewImages[currentIndex].animate(fadeInKeyFrame, fadeOptions);
+}, 3000);
