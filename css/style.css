@@ -4,11 +4,23 @@ body
     font-style: normal;
     text-align: center;
     color: #5D554D;
-    z-index: 1;
+    z-index: 0;
 }
 br
 {
     display: none;
+}
+a
+{
+    text-decoration: none;
+}
+.contet-layer
+{
+    z-index: 1;
+}
+.navmenu-btn-layer
+{
+    z-index: 3;
 }
 .right-branch,
 .left-branch
@@ -27,6 +39,31 @@ br
 {
     left: 0;
     bottom: 0;
+}
+.sns
+{
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+}
+.insta-btn,
+.tiktok-btn
+{
+    color: inherit;
+    font-size: 24px;
+}
+.circle-button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFDF8;
+    border: 1px solid #DED2C0;
+    border-radius: 50%;
+    color: inherit;
+    font-size: 24px;
+    width: 48px;
+    height: 48px;
 }
 
 /*
@@ -49,8 +86,63 @@ Header
 }
 .navmenu-open-btn
 {
-    width: 75px;
-    height: 75px;
+    width: 7.5vw;
+    fill: #5D554D;
+    margin: 1rem;
+}
+.navmenu-panel
+{
+    display: flex;
+    gap: 6rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #f5f2ed;
+    width: 75vw;
+    height: 100vh;
+    z-index: 2;
+    translate: 100vw;
+}
+.navmenu-close-btn
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 7.5vw;
+    fill: #5D554D;
+    margin: 1rem;
+}
+.navmenu-logo
+{
+    width: 50vw;
+}
+.navmenu-list
+{
+    list-style: none;
+}
+.navmenu-btn
+{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    background-color: #FFFDF8;
+    border: 1px solid #DED2C0;
+    border-radius: 50px;
+    width: 50vw;
+    padding: .5rem 1rem;
+    margin: 1rem auto;
+}
+.navmenu-btn svg
+{
+    width: 7.5vw;
+    fill: #5D554D;
+}
+.navmenu-btn span
+{
+    font-size: 20px;
 }
 
 /*
@@ -168,18 +260,6 @@ Information
 #information-table th
 {
     padding: 1rem;
-}
-#sns
-{
-    display: flex;
-    gap: .5rem;
-    justify-content: center;
-}
-#insta-btn,
-#tiktok-btn
-{
-    color: inherit;
-    font-size: 24px;
 }
 #table-reservation-btn
 {
