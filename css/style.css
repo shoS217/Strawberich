@@ -400,17 +400,25 @@ MenuPage
 }
 #drink-table
 {
+    width: 60vw;
     border-spacing: 0 1rem;
-    padding: 1.5rem 0;
-    margin: 0 auto;
+    margin: 1.5rem auto;
 }
 #drink-table th,
 #drink-table td
 {
-    text-align: left;
     font-size: 14px;
     border-bottom: 1px dotted #5D554D;
-    padding: 0 2rem;
+}
+#drink-table th
+{
+    text-align: left;
+    padding-left: 1rem;
+}
+#drink-table td
+{
+    text-align: right;
+    padding-right: 1rem;
 }
 
 /*
@@ -597,5 +605,9 @@ PC
     .product-img
     {
         width: 15vw;
+    }
+    #drink-table
+    {
+        width: 40vw;
     }
 }
