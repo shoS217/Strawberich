@@ -550,4 +550,24 @@ PC
     {
         width: 416px;
     }
+
+    /*
+    MenuPage
+    */
+    .title
+    {
+        padding: 4rem 0;
+    }
+    .title h1
+    {
+        font-size: 50px;
+    }
+    .horizontal-rule hr
+    {
+        width: 35px;
+    }
+    .horizontal-rule img
+    {
+        width: 1vw;
+    }
 }
