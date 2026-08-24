@@ -492,6 +492,51 @@ Tablet
     {
         width: 416px;
     }
+
+    /*
+    MenuPage
+    */
+    .title
+    {
+        padding: 4rem 0;
+    }
+    .title h1
+    {
+        font-size: 50px;
+    }
+    .horizontal-rule hr
+    {
+        width: 35px;
+    }
+    .horizontal-rule img
+    {
+        width: 2vw;
+    }
+    .category
+    {
+        width: 75vw;
+    }
+    .category img
+    {
+        width: 3vw;
+    }
+    .category h2
+    {
+        font-size: 25px;
+    }
+    .product-list
+    {
+        grid-template-columns: repeat(3, 1fr);
+        width: 85vw;
+    }
+    .product-img
+    {
+        width: 20vw;
+    }
+    #drink-table
+    {
+        width: 50vw;
+    }
 }
 
 /*
@@ -583,7 +628,7 @@ PC
     }
     .horizontal-rule img
     {
-        width: 1vw;
+        width: 1.5vw;
     }
     .category
     {
