@@ -313,7 +313,8 @@ MenuPage
 #menu-page-wrapper
 {
     position: relative;
-    background-color: #f5f2ed;;
+    background-color: #f5f2ed;
+    overflow: hidden;
 }
 .title
 {
@@ -354,7 +355,8 @@ MenuPage
     gap: .25rem;
     justify-content: center;
     align-items: center;
-    padding: 0 2rem;
+    width: 80vw;
+    margin: 0 auto;
 }
 .category hr
 {
@@ -375,7 +377,8 @@ MenuPage
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
-    padding: 1.5rem 2rem;
+    width: 90vw;
+    margin: 1.5rem auto;
 }
 .product-item
 {
@@ -385,7 +388,11 @@ MenuPage
     font-size: 14px;
     text-align: center;
     box-shadow: 0px 4px 12px rgba(107, 85, 67, 0.15);
-    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
 }
 .product-img
 {
@@ -393,17 +400,25 @@ MenuPage
 }
 #drink-table
 {
+    width: 60vw;
     border-spacing: 0 1rem;
-    padding: 1.5rem 0;
-    margin: 0 auto;
+    margin: 1.5rem auto;
 }
 #drink-table th,
 #drink-table td
 {
-    text-align: left;
     font-size: 14px;
     border-bottom: 1px dotted #5D554D;
-    padding: 0 2rem;
+}
+#drink-table th
+{
+    text-align: left;
+    padding-left: 1rem;
+}
+#drink-table td
+{
+    text-align: right;
+    padding-right: 1rem;
 }
 
 /*
@@ -477,6 +492,51 @@ Tablet
     {
         width: 416px;
     }
+
+    /*
+    MenuPage
+    */
+    .title
+    {
+        padding: 4rem 0;
+    }
+    .title h1
+    {
+        font-size: 50px;
+    }
+    .horizontal-rule hr
+    {
+        width: 35px;
+    }
+    .horizontal-rule img
+    {
+        width: 2vw;
+    }
+    .category
+    {
+        width: 75vw;
+    }
+    .category img
+    {
+        width: 3vw;
+    }
+    .category h2
+    {
+        font-size: 25px;
+    }
+    .product-list
+    {
+        grid-template-columns: repeat(3, 1fr);
+        width: 85vw;
+    }
+    .product-img
+    {
+        width: 20vw;
+    }
+    #drink-table
+    {
+        width: 50vw;
+    }
 }
 
 /*
@@ -549,5 +609,50 @@ PC
     #information-table
     {
         width: 416px;
+    }
+
+    /*
+    MenuPage
+    */
+    .title
+    {
+        padding: 4rem 0;
+    }
+    .title h1
+    {
+        font-size: 50px;
+    }
+    .horizontal-rule hr
+    {
+        width: 35px;
+    }
+    .horizontal-rule img
+    {
+        width: 1.5vw;
+    }
+    .category
+    {
+        width: 60vw;
+    }
+    .category img
+    {
+        width: 2.5vw;
+    }
+    .category h2
+    {
+        font-size: 25px;
+    }
+    .product-list
+    {
+        grid-template-columns: repeat(3, 1fr);
+        width: 70vw;
+    }
+    .product-img
+    {
+        width: 15vw;
+    }
+    #drink-table
+    {
+        width: 40vw;
     }
 }
