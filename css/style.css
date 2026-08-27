@@ -434,6 +434,18 @@ Tablet
     {
         width: 10vw;
     }
+    .navmenu-panel
+    {
+        width: 35vw;
+    }
+    .navmenu-logo
+    {
+        width: 21vw;
+    }
+    .navmenu-btn
+    {
+        width: 27vw;
+    }
 
     /*
     Common
