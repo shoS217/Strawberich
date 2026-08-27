@@ -475,6 +475,10 @@ Tablet
     {
         width: 22vw;
     }
+    .shop-view-img
+    {
+        width: 50vw;
+    }
     #about-wrapper h1
     {
         font-size: 20px;
@@ -610,6 +614,10 @@ PC
     #logo-white
     {
         width: 11vw;
+    }
+    .shop-view-img
+    {
+        width: 25vw;
     }
     #about-wrapper p
     {
