@@ -4,6 +4,7 @@ body
     font-style: normal;
     text-align: center;
     color: #5D554D;
+    fill: #5D554D;;
     font-size: 14px;
     z-index: 0;
 }
@@ -14,10 +15,6 @@ br
 a
 {
     text-decoration: none;
-}
-.navmenu-btn-layer
-{
-    z-index: 3;
 }
 .layer-1
 {
@@ -39,6 +36,14 @@ a
 {
     z-index: 5;
 }
+.layer-6
+{
+    z-index: 6;
+}
+.layer-7
+{
+    z-index: 7;
+}
 .right-branch,
 .left-branch
 {
@@ -57,19 +62,6 @@ a
     left: 0;
     bottom: 0;
 }
-.circle-button
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFDF8;
-    border: 1px solid #DED2C0;
-    border-radius: 50%;
-    color: inherit;
-    font-size: 18px;
-    width: 36px;
-    height: 36px;
-}
 .heading-main
 {
     font-size: 20px;
@@ -83,6 +75,11 @@ a
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.flex-row-between
+{
+    display: flex;
+    justify-content: space-between;
 }
 .flex-column-center
 {
@@ -111,51 +108,39 @@ Header
 */
 .header-wrapper
 {
-    display: flex;
-    justify-content: space-between;
     position: fixed;
-    z-index: 100;
     width: 100vw;
+    padding: 1rem;
 }
-.logo
+.logo-img
 {
     width: 15vw;
     background-color: #E8E5E2;
     border-radius: 50%;
-    margin: .5rem;
 }
-.navmenu-open-btn
+.navmenu-open-btn,
+.navmenu-close-btn
 {
     width: 28px;
-    fill: #5D554D;
-    margin: 1rem;
+}
+.navmenu-close-btn
+{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
 .navmenu-panel
 {
-    display: flex;
     gap: 2rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: fixed;
     top: 0;
     right: 0;
     background-color: #f5f2ed;
     width: 75vw;
     height: 100vh;
-    z-index: 2;
     translate: 100vw;
 }
-.navmenu-close-btn
-{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 28px;
-    fill: #5D554D;
-    margin: 1rem;
-}
-.navmenu-logo
+.navmenu-logo-img
 {
     width: 45vw;
 }
@@ -165,10 +150,7 @@ Header
 }
 .navmenu-btn
 {
-    display: flex;
     gap: .5rem;
-    justify-content: center;
-    align-items: center;
     background-color: #FFFDF8;
     border: 1px solid #DED2C0;
     border-radius: 50px;
@@ -179,11 +161,6 @@ Header
 .navmenu-btn svg
 {
     width: 14px;
-    fill: #5D554D;
-}
-.navmenu-btn span
-{
-    font-size: 14px;
 }
 
 /*
@@ -410,7 +387,7 @@ Tablet
     /*
     Header
     */
-    .logo
+    .logo-img
     {
         width: 10vw;
     }
@@ -418,7 +395,7 @@ Tablet
     {
         width: 35vw;
     }
-    .navmenu-logo
+    .navmenu-logo-img
     {
         width: 21vw;
     }
@@ -538,7 +515,7 @@ PC
     /*
     Header
     */
-    .logo
+    .logo-img
     {
         width: 5vw;
     }
@@ -546,7 +523,7 @@ PC
     {
         width: 20vw;
     }
-    .navmenu-logo
+    .navmenu-logo-img
     {
         width: 12vw;
     }
@@ -570,12 +547,6 @@ PC
     .right-branch
     {
         right: -3.5vw;
-    }
-    .circle-button
-    {
-        font-size: 18px;
-        width: 36px;
-        height: 36px;
     }
     .heading-main
     {
