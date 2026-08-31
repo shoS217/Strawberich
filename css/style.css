@@ -255,28 +255,28 @@ Menu
 }
 
 /*
-Information
+Access
 */
-#information-wrapper
+#access-wrapper
 {
     gap: 1.5rem;
     background-color: #f5f2ed;
     position: relative;
     padding: 2rem 0;
 }
-#information-table
+#access-table
 {
     width: 320px;
     border-spacing: 0
 }
-#information-table th,
-#information-table td
+#access-table th,
+#access-table td
 {
     text-align: left;
     font-size: 14px;
     border-bottom: 1px solid #5D554D;
 }
-#information-table th
+#access-table th
 {
     padding: 1rem;
 }
@@ -488,9 +488,9 @@ Tablet
     }
 
     /*
-    Information
+    Access
     */
-    #information-table
+    #access-table
     {
         width: 416px;
     }
@@ -626,9 +626,9 @@ PC
     }
 
     /*
-    Information
+    Access
     */
-    #information-table
+    #access-table
     {
         width: 416px;
     }
