@@ -14,10 +14,6 @@ a
 {
     text-decoration: none;
 }
-.contet-layer
-{
-    z-index: 1;
-}
 .navmenu-btn-layer
 {
     z-index: 3;
@@ -109,6 +105,14 @@ a
     display: inline-block;
     border-bottom: 1.5px solid #5D554D;
     padding: .25rem 1.5rem;
+}
+.button
+{
+    display: inline-block;
+    background-color: #CBBBAF;
+    color: #fff;
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
 }
 
 /*
@@ -246,13 +250,6 @@ Menu
 {
     width: 75vw;
 }
-#menu-btn
-{
-    background: #CBBBAF;
-    color: #fff;
-    border-radius: 20px;
-    padding: 0.5rem 1rem;
-}
 
 /*
 Access
@@ -279,14 +276,6 @@ Access
 #access-table th
 {
     padding: 1rem;
-}
-#table-reservation-btn
-{
-    background-color: #CBBBAF;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 20px;
-    padding: 0.5rem 2rem;
 }
 
 /*
