@@ -85,6 +85,31 @@ a
     width: 36px;
     height: 36px;
 }
+.heading-main
+{
+    font-size: 20px;
+}
+.descrition
+{
+    font-size: 14px;
+}
+.overflow-hidden
+{
+    overflow: hidden;
+}
+.flex-column-center
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.has-border-bottom
+{
+    display: inline-block;
+    border-bottom: 1.5px solid #5D554D;
+    padding: .25rem 1.5rem;
+}
 
 /*
 Header
@@ -171,28 +196,23 @@ About
 */
 #about-wrapper
 {
-    display: flex;
     gap: .5rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: #e7e5e2;
     position: relative;
-    overflow: hidden;
     height: 100vh;
 }
-#about-logo
+#about-logo-wrapper
 {
     position: relative;
 }
-#about-logo-background
+#about-logo-background-img
 {
     width: 90vw;
 }
-#logo-white
+#logo-white-img
 {
     position: absolute;
-    top: 50%;
+    top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 40vw;
@@ -204,13 +224,8 @@ About
     left: 0;
     width: 90vw;
 }
-#about-wrapper h1
-{
-    font-size: 20px;
-}
 #about-wrapper p
 {
-    font-size: 14px;
     margin: 0 1rem;
 }
 
@@ -219,24 +234,12 @@ Menu
 */
 #menu-wrapper
 {
-    display: flex;
     gap: 2rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background: #f5f2ed;
     padding: 2rem 0;
 }
-#menu-wrapper h1
-{
-    display: inline-block;
-    font-size: 20px;
-    border-bottom: 1.5px solid #5D554D;
-    padding: .25rem 1.5rem;
-}
 #menu-wrapper p
 {
-    font-size: 14px;
     margin: 0 1rem;
 }
 #products-img
@@ -256,22 +259,10 @@ Information
 */
 #information-wrapper
 {
-    display: flex;
     gap: 1.5rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: #f5f2ed;
     position: relative;
-    overflow: hidden;
     padding: 2rem 0;
-}
-#information-wrapper h1
-{
-    display: inline-block;
-    font-size: 20px;
-    border-bottom: 1.5px solid #5D554D;
-    padding: .25rem 1.5rem;
 }
 #information-table
 {
@@ -463,15 +454,23 @@ Tablet
     {
         right: -7vw;
     }
+    .heading-main
+    {
+        font-size: 30px;
+    }
+    .has-border-bottom
+    {
+        padding: .35rem 2.25rem;
+    }
 
     /*
     About
     */
-    #about-logo-background
+    #about-logo-background-img
     {
         width: 50vw;
     }
-    #logo-white
+    #logo-white-img
     {
         width: 22vw;
     }
@@ -479,19 +478,10 @@ Tablet
     {
         width: 50vw;
     }
-    #about-wrapper h1
-    {
-        font-size: 20px;
-    }
 
     /*
     Menu
     */
-    #menu-wrapper h1
-    {
-        font-size: 30px;
-        padding: .35rem 2.25rem;
-    }
     #products-img
     {
         width: 50vw;
@@ -500,11 +490,6 @@ Tablet
     /*
     Information
     */
-    #information-wrapper h1
-    {
-        font-size: 30px;
-        padding: .35rem 2.25rem;
-    }
     #information-table
     {
         width: 416px;
@@ -603,15 +588,23 @@ PC
         width: 36px;
         height: 36px;
     }
+    .heading-main
+    {
+        font-size: 30px;
+    }
+    .has-border-bottom
+    {
+        padding: .35rem 2.25rem;
+    }
 
     /*
     About
     */
-    #about-logo-background
+    #about-logo-background-img
     {
         width: 25vw;
     }
-    #logo-white
+    #logo-white-img
     {
         width: 11vw;
     }
@@ -627,11 +620,6 @@ PC
     /*
     Menu
     */
-    #menu-wrapper h1
-    {
-        font-size: 30px;
-        padding: .35rem 2.25rem;
-    }
     #products-img
     {
         width: 30vw;
@@ -640,11 +628,6 @@ PC
     /*
     Information
     */
-    #information-wrapper h1
-    {
-        font-size: 30px;
-        padding: .35rem 2.25rem;
-    }
     #information-table
     {
         width: 416px;
