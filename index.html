@@ -8,16 +8,17 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="images/favicon.png">
         <link rel="stylesheet" href="css/style.css">
         <script src="https://kit.fontawesome.com/f29c586cfc.js" crossorigin="anonymous"></script>
         <script src="js/script.js" defer></script>
     </head>
     <body>
         <!--Header-->
-        <header class="header-wrapper">
-            <a href="index.html"><img class="logo" src="images/logo.png" alt="ロゴ"></a>
+        <header class="header-wrapper flex-row-between layer-6">
+            <a href="index.html"><img class="logo-img" src="images/logo.png" alt="ロゴ"></a>
             <nav>
-                <button class="navmenu-open-btn navmenu-btn-layer">
+                <button class="navmenu-open-btn layer-6">
                     <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
                         <g>
                             <rect y="16" class="st0" width="512" height="80"></rect>
@@ -26,8 +27,8 @@
                         </g>
                     </svg>
                 </button>
-                <div class="navmenu-panel">
-                    <button class="navmenu-close-btn navmenu-btn-layer">
+                <div class="navmenu-panel flex-column-center layer-7">
+                    <button class="navmenu-close-btn layer-2">
                         <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
                             <g>
                                 <polygon class="st0" points="512,52.535 459.467,0.002 256.002,203.462 52.538,0.002 0,52.535 203.47,256.005 0,459.465 
@@ -35,10 +36,10 @@
                             </g>
                         </svg>
                     </button>
-                    <img class="navmenu-logo" src="images/logo2.png" alt="ロゴ">
-                    <ul class="navmenu-list">
+                    <img class="navmenu-logo-img" src="images/logo2.png" alt="ロゴ">
+                    <ul class="navmenu-list layer-2">
                         <li>
-                            <button id="home-transition-btn" class="navmenu-btn navmenu-btn-layer">
+                            <button id="home-transition-btn" class="navmenu-btn flex-row-center">
                                 <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
                                     <g>
                                         <polygon class="st0" points="433.198,205.503 433.198,86.669 363.908,86.669 363.908,136.267 308.912,81.341 256.09,28.323 
@@ -51,7 +52,7 @@
                             </button>
                         </li>
                         <li>
-                            <button id="menu-transition-btn" class="navmenu-btn navmenu-btn-layer">
+                            <button id="menu-transition-btn" class="navmenu-btn flex-row-center">
                                 <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
                                     <g>
                                         <path class="st0" d="M501.844,107.281c-6.172-7.828-13.969-13.438-22.25-18.031l-0.672-0.391l-0.719-0.297
@@ -82,7 +83,7 @@
                             </button>
                         </li>
                         <li>
-                            <button id="access-transition-btn" class="navmenu-btn navmenu-btn-layer">
+                            <button id="access-transition-btn" class="navmenu-btn flex-row-center">
                                 <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
                                     <g>
                                         <path class="st0" d="M256,0C160.798,0,83.644,77.155,83.644,172.356c0,97.162,48.158,117.862,101.386,182.495
@@ -95,27 +96,22 @@
                             </button>
                         </li>
                     </ul>
-                    <!--
-                    <div class="sns">
-                        <a class="circle-button navmenu-btn-layer" href="https://www.instagram.com/strawberich_osu/"><i class="fa-brands fa-instagram"></i></a>
-                        <a class="circle-button navmenu-btn-layer" href="https://www.tiktok.com/@strawberich_osu?lang=ja-JP"><i class="fa-brands fa-tiktok"></i></a>
-                    </div>
-                -->
                     <img class="right-branch" src="images/branch.png" alt="右の枝">
                     <img class="left-branch" src="images/branch.png" alt="左の枝">
                 </div>
             </nav>
         </header>
+
         <!--About-->
-        <section id="about-wrapper">
-            <div id="about-logo">
-                <img id="about-logo-background" class="layer-5" src="images/strawberry2.png" alt="いちご">
-                <img id="logo-white" class="layer-4" src="images/logo-white.png" alt="白いロゴ">
+        <section id="about-wrapper" class="overflow-hidden flex-column-center">
+            <div id="about-logo-wrapper">
+                <img id="about-logo-background-img" class="layer-5" src="images/strawberry2.png" alt="いちご">
+                <img id="logo-white-img" class="layer-4" src="images/logo-white.png" alt="白いロゴ">
                 <img class="shop-view-img layer-3" src="images/shop-view1.png" alt="店の写真の1枚目">
                 <img class="shop-view-img layer-2" src="images/shop-view2.png" alt="店の写真の2枚目">
                 <img class="shop-view-img layer-1" src="images/shop-view3.png" alt="店の写真の3枚目">
             </div>
-            <h1>いちごの良さを活かしたスイーツ</h1>
+            <h1 class="heading-main">いちごの良さを活かしたスイーツ</h1>
             <p>一年中いちごスイーツを楽しめるよう、<br>
                 全国から厳選した新鮮ないちごをふんだんに使ってちょっと贅沢なスイーツを作っています。<br>
                 季節ごとに異なる品種のいちごを取り入れており、<br>
@@ -124,23 +120,22 @@
             <img class="right-branch" src="images/branch.png" alt="右の枝">
             <img class="left-branch" src="images/branch.png" alt="左の枝">
         </section>
+
         <!--Menu-->
-        <section id="menu-wrapper">
-            <h1>Menu</h1>
+        <section id="menu-wrapper" class="flex-column-center">
+            <h1 class="heading-main has-border-bottom">Menu</h1>
             <img id="products-img" src="images/strawberries.png" alt="商品集">
             <p>季節ごとの新鮮ないちごを使用した多彩なスイーツやドリンクメニューをご紹介しています。<br>
                 ケーキやタルトなど、見た目にも華やかなスイーツが揃い、<br>
                 その時々のいちごの美味しさを存分に味わっていただけます。
             </p>
-            <a id="menu-btn" href="menu.html" alt="">view more</a>
-            <!--
-            <button id="menu-btn">view more</button>
-            -->
+            <a class="button" href="menu.html" alt="">view more</a>
         </section>
-        <!--Information-->
-        <section id="information-wrapper">
-            <h1>Information</h1>
-            <table id="information-table">
+
+        <!--Access-->
+        <section id="access-wrapper" class="overflow-hidden flex-column-center">
+            <h1 class="heading-main has-border-bottom">Access</h1>
+            <table id="access-table">
                 <tr>
                     <th>Adress</th>
                     <td>〒460-0011 愛知県名古屋市中区大須3丁目26−23</td>
@@ -166,14 +161,15 @@
                     <td>上前津駅より徒歩約5分</td>
                 </tr>
             </table>
-            <div class="sns" class="content-layer">
-                <a class="insta-btn" href="https://www.instagram.com/strawberich_osu/"><i class="fa-brands fa-instagram"></i></a>
-                <a class="tiktok-btn" href="https://www.tiktok.com/@strawberich_osu?lang=ja-JP"><i class="fa-brands fa-tiktok"></i></a>
+            <div class="sns-wrapper flex-row-center layer-1">
+                <a class="sns-btn" href="https://www.instagram.com/strawberich_osu/"><i class="fa-brands fa-instagram"></i></a>
+                <a class="sns-btn" href="https://www.tiktok.com/@strawberich_osu?lang=ja-JP"><i class="fa-brands fa-tiktok"></i></a>
             </div>
-            <a id="table-reservation-btn" class="content-layer" href="https://www.hotpepper.jp/strJ004577381/">席・商品を予約</a>
+            <a class="button layer-1" href="https://www.hotpepper.jp/strJ004577381/">来店を予約する</a>
             <img class="right-branch" src="images/branch.png" alt="右の枝">
             <img class="left-branch" src="images/branch.png" alt="左の枝">
         </section>
+
         <footer>
             <div class="copyright">
                 <small>&copy; 2026 Strawberry Rich. All Rights Reserved.</small>

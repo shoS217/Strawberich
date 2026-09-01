@@ -9,7 +9,7 @@ const homeSection = document.getElementById('about-wrapper');
 const menuTransitionBtn = document.getElementById('menu-transition-btn');
 const menuSection = document.getElementById('menu-wrapper');
 const accessTransitionBtn = document.getElementById('access-transition-btn');
-const accessSection = document.getElementById('information-wrapper');
+const accessSection = document.getElementById('access-wrapper');
 const menuOpenKeyframe = 
 {
     translate: ['100vw', 0],

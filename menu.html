@@ -8,20 +8,21 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="images/favicon.png">
         <link rel="stylesheet" href="css/style.css">
         <script src="https://kit.fontawesome.com/f29c586cfc.js" crossorigin="anonymous"></script>
-        <script src="js/script.js" defer></script>
     </head>
     <body>
         <!--Header-->
-        <header class="header-wrapper">
-            <a href="index.html"><img class="logo" src="images/logo.png" alt="ロゴ"></a>
+        <header class="header-wrapper flex-row-between layer-1">
+            <a href="index.html"><img class="logo-img" src="images/logo.png" alt="ロゴ"></a>
         </header>
+
         <!--Menu-->
-        <main id="menu-page-wrapper">
-            <div class="title">
-                <h1>Menu</h1>
-                <div class="horizontal-rule">
+        <main id="menu-page-wrapper" class="overflow-hidden">
+            <div class="title-wrapper flex-column-center">
+                <h1 class="title">Menu</h1>
+                <div class="divider flex-row-center">
                     <hr>
                     <img src="images/strawberry.png" alt="イチゴ">
                     <hr>
@@ -31,74 +32,74 @@
                 その時々のいちごの美味しさを存分に味わっていただけます。
                 </p>
             </div>
-            <div class="category">
+            <div class="category-header flex-row-center heading-category text-color-red">
                 <hr>
                 <img src="images/strawberry.png" alt="イチゴ">
                 <h2>Sweets</h2>
                 <img src="images/strawberry.png" alt="イチゴ">
                 <hr>
             </div>
-            <div class="product-list">
-                <div class="product-item">
+            <div class="product-list grid layer-1">
+                <div class="product-item flex-column-center">
                     <img class="product-img" src="images/tarto.png" alt="タルト">
                     <p>いちごタルト</p>
                     <p>700円</p>
                 </div>
-                <div class="product-item">
+                <div class="product-item flex-column-center">
                     <img class="product-img" src="images/macaron.png" alt="マカロン">
                     <p>いちごマカロン</p>
                     <p>650円</p>
                 </div>
-                <div class="product-item">
+                <div class="product-item flex-column-center">
                     <img class="product-img" src="images/creampuff.png" alt="シュークリーム">
                     <p>いちごシュークリーム</p>
                     <p>750円</p>
                 </div>
-                <div class="product-item">
+                <div class="product-item flex-column-center">
                     <img class="product-img" src="images/pannacotta.png" alt="パンナコッタ">
                     <p>パンナコッタ</p>
                     <p>700円</p>
                 </div>
-                <div class="product-item">
+                <div class="product-item flex-column-center">
                     <img class="product-img" src="images/macaronstick.png" alt="マカロンスティック">
                     <p>いちごマカロンスティック</p>
-                    <p>700円
+                    <p>700円</p>
                 </div>
-                <div class="product-item">
+                <div class="product-item flex-column-center">
                     <img class="product-img" src="images/ribbonbread.png" alt="リボンパン">
                     <p>リボンパン</p>
                     <p>1360円</p>
                 </div>
-                <div class="product-item">
+                <div class="product-item flex-column-center">
                     <img class="product-img" src="images/tiramsu.png" alt="ティラミス">
                     <p>いちごティラミス</p>
-                    <p>750円
+                    <p>750円</p>
                 </div>
-                <div class="product-item">
+                <div class="product-item flex-column-center">
                     <img class="product-img" src="images/cupshortcake.png" alt="カップショートケーキ">
                     <p>カップショートケーキ</p>
                     <p>850円</p>
                 </div>
             </div>
-            <div class="category">
+            <div class="category-header flex-row-center heading-category text-color-red">
                 <hr>
                 <img src="images/strawberry.png" alt="イチゴ">
                 <h2>Drink</h2>
                 <img src="images/strawberry.png" alt="イチゴ">
                 <hr>
             </div>
-            <div class="product-list">
-                <div class="product-item">
+            <div class="product-list grid layer-1">
+                <div class="product-item flex-column-center">
                     <img class="product-img" src="images/strawberrymilk.png" alt="いちごミルク">
                     <p>いちごミルク</p>
                     <p>800円</p>
                 </div>
-                <div class="product-item">
+                <div class="product-item flex-column-center">
                     <img class="product-img" src="images/strawberrysoda.png" alt="いちごソーダ">
                     <p>いちごソーダ</p>
                     <p>750円</p>
                 </div>
-                <div class="product-item">
+                <div class="product-item flex-column-center">
                     <img class="product-img" src="images/strawberrycafelatte.png" alt="いちごカフェラテ">
                     <p>いちごカフェラテ</p>
                     <p>700円</p>
@@ -129,6 +130,7 @@
             <img class="left-branch" src="images/branch.png" alt="枝">
             <img class="right-branch" src="images//branch.png" alt="枝">
         </main>
+
         <!--Footer-->
         <footer>
             <div class="copyright">
