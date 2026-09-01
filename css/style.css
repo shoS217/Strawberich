@@ -128,6 +128,21 @@ a
     color: #fff;
     border-radius: 20px;
     padding: 0.5rem 2rem;
+    transition: .3s;
+}
+.button:hover
+{
+    background-color: #fff;
+    color: #CBBBAF;
+    box-shadow: 0px 4px 12px rgba(107, 85, 67, 0.25);
+}
+.button:active,
+.navmenu-open-btn:active,
+.navmenu-close-btn:active,
+.navmenu-btn:active,
+.sns-btn:active
+{
+    opacity: .2;
 }
 .divider
 {
@@ -162,6 +177,12 @@ Header
 .navmenu-close-btn
 {
     width: 28px;
+    transition: .3s;;
+}
+.navmenu-open-btn:hover,
+.navmenu-close-btn:hover
+{
+    fill: #CBBBAF;
 }
 .navmenu-close-btn
 {
@@ -197,6 +218,13 @@ Header
     width: 58vw;
     padding: .25rem 0;
     margin: .5rem auto;
+    transition: .3s;
+}
+.navmenu-btn:hover
+{
+    color: #FFFDF8;
+    fill: #FFFDF8;
+    background-color: #5D554D;
 }
 .navmenu-btn svg
 {
@@ -293,6 +321,11 @@ Access
 {
     color: inherit;
     font-size: 24px;
+    transition: .3s;
+}
+.sns-btn:hover
+{
+    color:#CBBBAF;
 }
 
 /*
