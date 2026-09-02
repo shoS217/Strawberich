@@ -212,6 +212,8 @@ Header
 }
 .navmenu-btn
 {
+    -webkit-appearance: none;
+    appearance: none;
     gap: .5rem;
     background-color: #FFFDF8;
     color: #5D554D;
