@@ -307,6 +307,12 @@ Access
     position: relative;
     padding: 2rem 0;
 }
+#map
+{
+    width: 320px;
+    height: 225px;
+    border: 1px solid #5D554D;
+}
 #access-table
 {
     width: 320px;
@@ -511,6 +517,10 @@ Tablet
     /*
     Access
     */
+    #map
+    {
+        width: 416px;
+    }
     #access-table
     {
         width: 416px;
@@ -642,6 +652,10 @@ PC
     /*
     Access
     */
+    #map
+    {
+        width: 416px;
+    }
     #access-table
     {
         width: 416px;
